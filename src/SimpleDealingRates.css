@@ -1,0 +1,646 @@
+.SimpleDealingRates{
+	box-shadow: 2px 2px 2px 2px #708090;
+	border-radius: 5px;
+	 width:29%;
+	 height: 60%;
+	 min-width: 300px;
+	 max-width: 80%;
+	 min-height: 300px;
+	 max-height: 80%;
+	 margin-left: 50px;
+	 margin-top: 59px;
+	 position: absolute;
+     display: block;
+     background: #ffffff;
+     overflow: scroll;
+     resize:both;
+     transition: 0.3s;
+     
+}
+.SimpleDealingRatesHeading p{
+	font-weight: 500;
+	font-size: .875em; 
+	width:180px;
+	margin: 10px 10px 10px 50px;
+}
+.logo{
+	width: 50px;
+	text-align: center;
+	font-size: 30px;
+	position: absolute;
+}
+.SDRTable{
+
+	width:100%;
+  	table-layout: fixed;
+  	border-collapse: collapse;
+
+}
+
+.SDRTable th{
+	font-size: .8em; 
+	width: 100px;
+	font-weight: lighter;
+  	padding: 02px;
+}
+
+.SDRTable tr {
+ 	border: 1px solid #dfdfdf;
+ 	
+
+}
+.SDRTable tr:hover {
+  background-color:#f1f1f1;
+}
+.SDRTable tr:focus-within {
+  background-color: #f3f3f3;
+}
+
+.SDRTable td{
+	
+	font-size: .85em;
+	
+	text-align: center;
+	font-weight: 400;
+}
+
+.SDRTable span{
+    font-size: 1.1em;
+    font-weight: 450;
+    text-align: center;
+    padding-left: 35px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fafafa; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #afafaf; 
+}
+.sell{
+
+    border-radius: 5px;
+	padding-left: 0px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	min-width: 50px;
+	height: 20px;
+	border : 1px solid #dfdfdf;
+	background-color: #cfcfcf;
+}
+.logo1{
+	margin-left: -25px;
+	margin-top: -1px;
+	text-align: center;
+	font-size: 15px;
+	position: absolute;
+
+}
+.logo1 span{
+	color:#fff;
+}
+.orderMenuMain{
+	box-shadow: 2px 2px 2px 2px #708090;
+	border-radius: 5px;
+	margin-left: 40%;
+	margin-top: 10%;
+	position: absolute;
+    display: none;
+    background: #fcfcfc;
+    z-index: 999;
+}
+.orderMenu{
+	 box-shadow: 2px 2px 2px #708090;
+	 border-radius: 5px;
+	 width: 500px;
+	 height: 330px;
+	 position: absolute;
+	 display: none;
+     background: #fcfcfc;
+}
+
+.closebtn {
+  position: absolute;
+  left:455px;
+  top: 3px;
+  right: 20px;
+  text-align: center;
+  font-size: 25px;
+  margin-left: 0px;
+  cursor: default;
+}
+.closebtn:hover {
+	color: red;
+}
+.orderMenu--title p{
+	font-weight: 500;
+	font-size: 1em; 
+	width:180px;
+	margin: 10px 10px 10px 50px;
+}
+
+.orderMenu--separator {
+        width: 100%;
+        height: 1px;
+        background:#ccc;
+        margin: 0 0 0 0;
+    }
+
+.orderMenu--account{
+	margin-top: 15px;
+	
+}
+.orderMenu--account label{
+
+	font-size: .9em;
+	color:#8f8f8f;
+	margin-left:100px; 	
+}
+.orderMenu--account select{
+	margin-left: 15px;
+	border-radius: 5px;
+	height:30px;
+	width:150px;
+	cursor: pointer;
+	background-color: #ffffff;
+}
+
+.orderMenu--account button{
+	border-radius: 5px;
+	margin-left: 50px;
+	width:115px;
+	height:30px;
+	color: #ffffff;
+    background-color: #125eb2;
+    border: solid 1px #10549f;
+    font-size: .9em;
+
+}
+.orderMenu--symbol{
+	margin-top: 10px;
+}
+.orderMenu--symbol label{
+	margin-left: 105px;
+	font-size: .9em;
+	color:#8f8f8f;
+}
+.orderMenu--symbol select{
+	margin-left: 15px;
+	border-radius: 5px;
+	height:30px;
+	width:150px;
+	cursor: pointer;
+	background-color: #ffffff;
+}
+
+.orderMenu--symbol button{
+	border-radius: 5px;
+	margin-left: 50px;
+	width:115px;
+	height:30px;
+	color: #212121;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    font-size: .9em;
+}
+.orderMenu--sellbuy{
+	margin-top: 8px;
+	margin-left: 47px;
+	
+}
+.orderMenu--sellbuy label{
+
+	font-size: .9em;
+	color:#8f8f8f;		
+}
+
+.orderMenu--sellbuy span{
+margin-left: 53px;
+
+}
+
+.orderMenu--sellbuy #sell{
+	margin-left: 30px;
+	width:15px;
+	height:15px;
+	color :#125eb2;
+	background-color: #fff;
+
+}
+.orderMenu--sellbuy #buy{
+	margin-left: 30px;
+	width:20px;
+	height:20px;
+	color :#125eb2;
+	background-color: #fff;
+
+}
+.orderMenu--sellbuy button{
+	border-radius: 5px;
+	margin-left: 70px;
+	width:115px;
+	height:30px;
+	color: #212121;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    font-size: .9em;
+
+}
+/* The container */
+.container {
+  
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: -30px;
+  height: 18px;
+  width: 18px;
+  background-color: #aaa;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #125eb2;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 6px;
+	left: 5.5px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: white;
+}
+.orderMenu--amount{
+	margin-top: 10px;
+	margin-left: 52px;
+	
+}
+.orderMenu--amount label{
+
+	font-size: .9em;
+	color:#8f8f8f;
+	margin-left: 30px;
+}
+.orderMenu--amount select{
+	margin-left: 15px;
+	border-radius: 5px;
+	height:30px;
+	width:150px;
+	cursor: pointer;
+	background-color: #ffffff;
+}
+.orderMenu--pipcost{
+	margin-top: 5px;
+	color:#8f8f8f;
+	margin-left: 100px;
+	font-size: .9em
+}
+.orderMenu--pipcost #perpip{
+	margin-left: 22px;
+}
+.orderMenu--pipcost #usdMr{
+	margin-left: 40px;
+}
+.orderMenu--rates {
+	margin-top: 7px;
+	margin-left: 100px;
+	
+}
+.orderMenu--rates label{
+	color:#8f8f8f;
+	margin-left: 20px;
+	font-size: .9em;
+}
+
+.orderMenu--rates input{
+	margin-left: 15px;
+	border-radius: 5px;
+	width:145px;
+	height: 20px;
+	text-indent: 15px;
+	font-weight: 550;
+}
+.orderMenu--ordertype{
+	margin-top: 10px;
+}
+.orderMenu--ordertype input{
+	border-radius: 5px;
+	width:150px;
+	height: 25px;
+	text-indent: 15px;
+	font-weight: 550;
+	margin-left: 10px;
+	background-color: #ffffff;
+}
+
+.orderMenu--ordertype label{
+
+	font-size: .9em;
+	color:#8f8f8f;
+	margin-left: 83px;
+}
+
+.orderMenu--ordertype select{
+	margin-left: 15px;
+	border-radius: 5px;
+	height:30px;
+	width:150px;
+	cursor: pointer;
+	font-weight: 500;
+	background-color: #ffffff;
+}
+.orderMenuAdavanced{
+	 box-shadow: 2px 2px 2px #708090;
+	 border-radius: 5px;
+	 margin-top: 310px;
+	 width: 500px;
+	 height: 300px;
+	 position: relative;
+     background: #fcfcfc;
+     display: none;
+}
+.orderMenu--timeinforce label{
+	font-size: .9em;
+	color:#8f8f8f;
+	margin-left: 69px;
+}
+.orderMenu--timeinforce select{
+	margin-left: 15px;
+	border-radius: 5px;
+	height:30px;
+	width:150px;
+	cursor: pointer;
+	font-weight: 500;
+	background-color: #ffffff;
+}
+
+/* The container */
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color:#8f8f8f;
+  font-size: .9em;
+  width: 45px;
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: #aaa;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .checkmark1 {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container1 input:checked ~ .checkmark1 {
+  background-color: #125eb2;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark1:after {
+  left: 6.5px;
+  top: 4.5px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.orderMenu--separator1 {
+		position: absolute;
+		margin-left: 130px;
+		top: 45px;
+        width: 70%;
+        height: 1px;
+        background:#ccc;
+       
+}
+.orderMenuRate label{
+	font-size: .9em;
+	color:#8f8f8f;
+	margin-left: 88px;
+}
+.orderMenuRate span{
+	font-size: .9em;
+	color:#8f8f8f;
+}
+.orderMenuRate #rate{
+	border :1px solid #aaa;
+	border-radius: 5px;
+	width:130px;
+	height: 25px;
+	text-indent: 15px;
+	font-weight: 550;
+	margin-left: 10px;
+	background-color: #ffffff;
+
+ }
+ .orderMenuRate #rateRange{
+ 	border :1px solid #aaa;
+ 	border-radius: 5px;
+	width:100px;
+	height: 25px;
+	text-indent: 15px;
+	font-weight: 550;
+	margin-left: 45px;
+ }
+ .orderMenuTrailing{
+ 	margin-top: 8px;
+ }
+ .orderMenuTrailing label{
+ 	font-size: .9em;
+	color:#8f8f8f;
+	margin-left: 70px;
+ }
+ .orderMenuTrailing select{
+ 	margin-left: 10px;
+	border-radius: 5px;
+	height:30px;
+	width:130px;
+	cursor: pointer;
+	font-weight: 500;
+	background-color: #ffffff;
+ }
+ .orderMenuTrailing input{
+ 	border :1px solid #aaa;
+ 	border-radius: 5px;
+	width:100px;
+	height: 25px;
+	text-indent: 15px;
+	font-weight: 550;
+	margin-left: 110px;
+ }
+.orderMenu--separator2 {
+		position: absolute;
+		margin-left: 130px;
+		top: 145px;
+        width: 70%;
+        height: 1px;
+        background:#ccc;
+       
+}
+
+.orderMenuLimitRate label{
+	font-size: .9em;
+	color:#8f8f8f;
+	margin-left: 88px;
+}
+.orderMenuLimitRate span{
+	font-size: .9em;
+	color:#8f8f8f;
+}
+.orderMenuLimitRate #limitRate{
+	border :1px solid #aaa;
+	border-radius: 5px;
+	width:130px;
+	height: 25px;
+	text-indent: 15px;
+	font-weight: 550;
+	margin-left: 10px;
+	background-color: #ffffff;
+
+ }
+ .orderMenuLimitRate #limitRateRange{
+ 	border :1px solid #aaa;
+ 	border-radius: 5px;
+	width:100px;
+	height: 25px;
+	text-indent: 15px;
+	font-weight: 550;
+	margin-left: 40px;
+ }
+
+.orderMenuProfitLoss{
+
+}
+.orderMenuProfitLoss label{
+	font-size: .9em;
+	color:#8f8f8f;
+	margin-left: 20px;
+}
+.orderMenu--separator3 {
+		position: absolute;
+		margin-left: 130px;
+		top: 205px;
+        width: 70%;
+        height: 1px;
+        background:#ccc;      
+}
+.orderMenuStopLoss{
+	margin-top: 10px;
+}
+.orderMenuStopLoss label{
+	font-size: .9em;
+	color:#8f8f8f;
+	margin-left: 20px;
+}
+.orderMenuStopLoss span{
+	font-size: .9em;
+	color:#8f8f8f;
+	margin-left: 70px;
+}
+.orderMenu--separator4{
+	position: absolute;
+		margin-left: 20px;
+		top: 255px;
+        width: 92%;
+        height: 1px;
+        background:#ccc; 
+}
+.orderMenuInPips{
+margin-top: 25px;
+}
